@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Portafolio - Match Meeting</title>
+<style>
+  /* Reset básico */
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: #007acc;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  header h1 {
+    margin-bottom: 5px;
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 100;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+
+  nav ul li {
+    margin: 0 15px;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 15px 10px;
+    color: #007acc;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  nav ul li a:hover {
+    color: #004a99;
+  }
+
+  main {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  section {
+    margin-bottom: 40px;
+  }
+
+  section h2 {
+    color: #007acc;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #007acc;
+    padding-bottom: 5px;
+  }
+
+  /* Espacio para imágenes y gráficos */
+  .image-placeholder {
+    width: 100%;
+    height: 250px;
+    background: #e1e4e8;
+    border-radius: 8px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-style: italic;
+  }
+
+  footer {
+    text-align: center;
+    padding: 15px 0;
+    color: #777;
+    font-size: 0.9rem;
+  }
+
+  @media(max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+    }
+    nav ul li {
+      margin: 5px 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Match Meeting</h1>
+  <p>Proyecto desarrollado por Cristian Rivera, Daniel Muñoz, Nicolás Rivera</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#introduccion">Introducción</a></li>
+    <li><a href="#proposito">Propósito</a></li>
+    <li><a href="#objetivos">Objetivos</a></li>
+    <li><a href="#pregunta">Pregunta Problema</a></li>
+    <li><a href="#alcance">Alcance</a></li>
+    <li><a href="#stakeholders">Stakeholders</a></li>
+    <li><a href="#recursos">Recursos</a></li>
+    <li><a href="#marco">Marco Teórico</a></li>
+    <li><a href="#conclusion">Conclusión</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="introduccion">
+    <h2>Introducción</h2>
+    <p>
+      Nuestra aplicación facilitará a un grupo de usuarios interesados en el fútbol en Bogotá encuentros para partidos de fútbol 5, 11 y microfútbol. Los usuarios podrán crear equipos, registrar sus datos y escaneo facial para mayor seguridad. La app usará GPS para encontrar partidos en zonas cercanas, además tendrá chat, apuestas con depósito seguro y calificación post partido.
+    </p>
+  </section>
+
+  <section id="proposito">
+    <h2>Propósito y Justificación</h2>
+    <p>
+      Uno de los problemas más recurrentes para jugar partidos de fútbol es la dificultad para concretarlos. Queremos generar una aplicación que permita coordinar partidos y personas de manera organizada e intuitiva.
+    </p>
+  </section>
+
+  <section id="objetivos">
+    <h2>Objetivos</h2>
+    <h3>General</h3>
+    <p>
+      Facilitar encuentros para partidos de fútbol a través de una aplicación móvil que use GPS para buscar personas con el mismo interés.
+    </p>
+    <h3>Específicos</h3>
+    <ul>
+      <li>Generar una aplicación usando Python.</li>
+      <li>Desarrollar una base de datos sólida para un registro seguro.</li>
+      <li>Implementar reconocimiento facial para mayor confiabilidad.</li>
+      <li>Generar estadísticas del proyecto.</li>
+      <li>Usar GPS para buscar en zonas cercanas.</li>
+      <li>Promover el deporte y la interacción social.</li>
+    </ul>
+  </section>
+
+  <section id="pregunta">
+    <h2>Pregunta Problema</h2>
+    <p>¿Te ha pasado que quieres jugar un partido de fútbol, pero todas las canchas están llenas o no hay gente?</p>
+  </section>
+
+  <section id="alcance">
+    <h2>Alcance</h2>
+    <p>
+      Desarrollar una aplicación que permita organizar encuentros y partidos de fútbol, automatizando gestión de fecha, hora y lugar, con una interfaz didáctica. Además, se planea incluir diseños para equipos y ampliar zonas de búsqueda.
+    </p>
+  </section>
+
+  <section id="stakeholders">
+    <h2>Stakeholders</h2>
+    <ul>
+      <li>Líder: Daniel Muñoz</li>
+      <li>Desarrollador: Daniel Muñoz</li>
+      <li>Base de datos: Daniel Muñoz</li>
+      <li>Comunicador del proyecto: Daniel Muñoz</li>
+      <li>Ilustrador: Daniel Muñoz</li>
+    </ul>
+  </section>
+
+  <section id="recursos">
+    <h2>Recursos</h2>
+    <ul>
+      <li>Diseño del logo mediante página web o app.</li>
+      <li>Integrar GPS en la app.</li>
+      <li>Servidor hosting para alojar la app.</li>
+      <li>Base de datos MySQL.</li>
+      <li>Visual Studio Code para desarrollo.</li>
+      <li>Python como lenguaje backend.</li>
+    </ul>
+  </section>
+
+  <section id="marco">
+    <h2>Marco Teórico</h2>
+    <p>
+      La aplicación usará localización para generar encuentros deportivos, con apuestas gestionadas por una API. Se usará Python, GPS y reconocimiento facial para seguridad y confianza. Esto promoverá el deporte y las relaciones entre personas.
+    </p>
+
+    <h3>Caracterización - Análisis de Datos Encuesta</h3>
+    <p>Se realizó una encuesta para conocer el interés y preferencias de los usuarios potenciales. Los datos indican un público mayormente joven (18-24 años) y masculino, con alta aceptación para el uso de registro seguro y la aplicación en general.</p>
+
+    <div class="image-placeholder">[Aquí va un gráfico de la encuesta]</div>
+  </section>
+
+  <section id="conclusion">
+    <h2>Conclusión Análisis de Datos</h2>
+    <p>
+      La encuesta confirma la necesidad de un sistema de registro seguro con escaneo facial y la viabilidad de la aplicación, con un 70% de aceptación. Se recomienda que solo personas mayores de 18 años usen la app, especialmente por las apuestas.
+    </p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2024 Match Meeting - Universidad San Buenaventura Bogotá</p>
+</footer>
+
+</body>
+</html>
